@@ -14,43 +14,79 @@
     <body>
       <h1>Savvy Books and Music</h1>
       <nav>
-
         <ul>
-            <li><a href="books.html"> Books</a></li>
-            <li><a href="music.html"> Music</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="music.html">Music</a></li>
         </ul>
-
       </nav>
-
       <div id="content">
-          <form action="">
-              <div>
-                  <section>
-                      <br> <br>
-                      <input type="text" name="name" placeholder="Name" size="50"  required autofocus>
-                      <br> <br>
-                      <input type="text" name="author" placeholder="Author" size="50" required>
-                      <br> <br>
-                      <input type="text" name="picture_url" placeholder="Insert Your Picture URL Here" size="50" required>
-                      <br> <br>
-                      <input type="text" name="price" placeholder="Price" size="10" required>
-                      <br> <br>
-                  </section>
-              </div>
-              <div>
-                  <section>
-                      <p>Selling Points</p>
-                      <textarea name="selling_points" rows="8" cols="40"></textarea>
-                  </section>
-              </div>
-              <br> <br>
+        <div id="book1">
+            <div class="id">
+                1
+            </div>
+            <div class="name">
+                War and Peace
+            </div>
+            <div class="author">
+                Leo Tolstoy
+            </div>
+            <div class="price">
+                1
+            </div>
+            <img class="picture" src="https://upload.wikimedia.org/wikipedia/commons/a/af/Tolstoy_-_War_and_Peace_-_first_edition%2C_1869.jpg" alt= "War and Peace">
+            <ul class="selling_points">
+                <li>Best book ever!</li>
+                <li>Too short!</li>
+            </ul>
+        </div>
 
-              <div>
-                  <section>
-                      <input type="submit" value="Submit">
-                  </section>
-              </div>
-          </form>
+        <div id="book2">
+            <div class="id">
+                2
+            </div>
+            <div class="name">
+                All's Quiet on the Western Front
+            </div>
+            <div class="author">
+                Erich Remarque
+            </div>
+            <div class="price">
+                2
+            </div>
+            <img class="picture" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Remarque_Im_Westen_nichts_Neues_1929.jpg/330px-Remarque_Im_Westen_nichts_Neues_1929.jpg" alt="All's Quiet">
+            <ul class="selling_points">
+                <li>Perfect summer read!</li>
+                <li>Action never stopped!</li>
+            </ul>
+        </div>
+        <form action="">
+          <div>
+              <section>
+                  <br> <br>
+                  <input type="text" name="name" placeholder="Name" size="50"  required autofocus>
+                  <br> <br>
+                  <input type="text" name="author" placeholder="Author" size="50" required>
+                  <br> <br>
+                  <input type="text" name="picture_url" placeholder="Insert Your Picture URL Here" size="50" required>
+                  <br> <br>
+                  <input type="text" name="price" placeholder="Price" size="10" required>
+                  <br> <br>
+              </section>
+          </div>
+          <div>
+              <section>
+                  <p>Selling Points</p>
+                  <textarea name="selling_points" rows="8" cols="40"></textarea>
+              </section>
+          </div>
+          <br> <br>
+
+          <div>
+              <section>
+                  <input type="submit" value="Submit">
+              </section>
+          </div>
+        </form>
       </div>
 
       <footer>
