@@ -24,3 +24,23 @@ var book2 = {
         "Real G's move silent, like Lasagna. -Lil WayneEverybody loves hot wings!"
     ]
 }
+
+  $('book1 .name').text(book1.name)
+
+  $('book1 .author').text(book1.author)
+
+  $('book1 .picture_url').text(book1.picture_url)
+
+  $('book1 .price').text(book1.price)
+
+  $('book1 .selling_points').text(book1.selling_points)
+
+  $('book2 .name').text(book2.name)
+
+  $('book2 .author').text(book2.author)
+
+  $('book2 .picture_url').text(book2.picture_url)
+
+  $('book2 .price').text(book2.price)
+
+  $('book2 .selling_points').text(book2.selling_points)
