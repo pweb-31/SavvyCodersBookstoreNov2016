@@ -2,3 +2,4 @@
 ## Web Store Hackathon
 
 + Alex Pearson
++ Patrick Weber
