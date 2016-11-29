@@ -1,2 +1,2 @@
-# Savvy Coders Hackathon \#2
+# Savvy Coders Hackathon \#1
 ## Web Store Hackathon
