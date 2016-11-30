@@ -44,8 +44,7 @@ var book4 = {
     "price": 25,
     "selling_points": [
         "Defining album of Rock n Roll.",
-        "Best album cover ever!",
-
+        "Best album cover ever!"
     ]
 }
 
@@ -53,7 +52,7 @@ var book4 = {
 
   $('#book1 .author').text(book1.author)
 
-  $('#book1 .picture_url').text(book1.picture_url)
+  $('#book1 .picture_url').attr( "src", book1.picture_url)
 
   $('#book1 .price').text(book1.price)
 
