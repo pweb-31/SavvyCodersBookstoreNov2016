@@ -48,22 +48,10 @@ var book4 = {
     ]
 }
 
-  $('#book1 .name').text(book1.name)
+$('#book2').append( "<div>" + book2.name + "</div>");
+$('#book2').append( "<div>" + book2.author + "</div>");
+$('#book2').append( "<div>" + "<img src= '" + book2.picture_url + "'/></div>");
+$('#book2').append( "<div>" + book2.price + "</div>");
 
-  $('#book1 .author').text(book1.author)
-
-  $('#book1 .picture_url').attr( "src", book1.picture_url)
-
-  $('#book1 .price').text(book1.price)
-
-  $('#book1 .selling_points').text(book1.selling_points)
-
-  $('#book2 .name').text(book2.name)
-
-  $('#book2 .author').text(book2.author)
-
-  $('#book2 .picture_url').text(book2.picture_url)
-
-  $('#book2 .price').text(book2.price)
-
-  $('#book2 .selling_points').text(book2.selling_points)
+$('#book2').append( "<ul><li> " + book2.selling_points[0] + "</li>" + "<li>"
+ + book2.selling_points[1] +"<li>" + book2.selling_points[2]+ "</li></ul>");
