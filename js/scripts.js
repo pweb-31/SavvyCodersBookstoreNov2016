@@ -68,7 +68,8 @@ var addToPage = function( product ){
     $target.append( $name, $author, $image, $price, $selling_points );
     $form.before( $target );
 };
-var counter=0;
+
+var counter = 0;
 
 while ( counter < products.length  ) {
 
@@ -76,3 +77,26 @@ while ( counter < products.length  ) {
 
   counter++;
 }
+
+$( "form" ).on( "submit", function( event ){
+    event.preventDefault();
+
+    var data = $( this ).serializeArray();
+    var newProduct = {};
+    var dataCounter = 0;
+
+    while( dataCounter < data.length ){
+        var field = data[ dataCounter ];
+
+        if( field.name === "selling_points" ){
+            newProduct[ field.name ] = field.value.split( "," );
+        }
+        else{
+            newProduct[ field.name ] = field.value;
+        }
+
+        dataCounter++;
+    }
+
+    addToPage( newProduct );
+} );
