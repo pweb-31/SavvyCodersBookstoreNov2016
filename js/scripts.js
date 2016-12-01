@@ -68,8 +68,11 @@ var addToPage = function( product ){
     $target.append( $name, $author, $image, $price, $selling_points );
     $form.before( $target );
 };
+var counter=0;
 
-addToPage( book1 );
-addToPage( book2 );
-addToPage( album1 );
-addToPage( album2 );
+while ( counter < products.length  ) {
+
+  addToPage(products[counter]);
+
+  counter++;
+}
