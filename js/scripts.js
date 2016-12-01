@@ -36,7 +36,7 @@ var album1 = {
         "I don't know where the time went!",
     ]
 }
-var book4 = {
+var album2 = {
     "id": 4,
     "name": "IV",
     "author": "Led Zeppelin",
@@ -47,37 +47,30 @@ var book4 = {
         "Best album cover ever!"
     ]
 }
-$('#book1 .author').text(book1.author)
-
-$('#book1 .picture_url').attr( "src", book1.picture_url)
-
-$('#book1 .price').text(book1.price)
-
-$('#book1 .selling_points').text(book1.selling_points);
-
-$('#book2').append( "<div>" + book2.name + "</div>");
-$('#book2').append( "<div>" + book2.author + "</div>");
-$('#book2').append( "<div>" + "<img src= '" + book2.picture_url + "'/></div>");
-$('#book2').append( "<div>" + book2.price + "</div>");
-$('#book2').append( "<ul><li> " + book2.selling_points[0] + "</li>" + "<li>"
-+ book2.selling_points[1] +"<li>" + book2.selling_points[2]+ "</li></ul>");
 
 
-var $form = $( "form" );
-var $target = $( "<div id='album1'>");
+var addToPage = function( product ){
+    var $form = $( "form" );
+    var $target = $( "<div>");
 
-var $name = $( "<h3 class='name'>" ).text( album1.name );
-var $author = $( "<div class='author'>" ).text( album1.author );
-var $image = $( "<img>" ).attr( "src", album1.picture_url );
-var $price = $( "<div>" ).text( "Price: $" + album1.price );
-var $selling_points = $( "<ul>" );
-var counter = 0;
+    var $name = $( "<h3 class='name'>" ).text( product.name );
+    var $author = $( "<div class='author'>" ).text( product.author );
+    var $image = $( "<img>" ).attr( "src", product.picture_url );
+    var $price = $( "<div>" ).text( "Price: $" + product.price );
+    var $selling_points = $( "<ul>" );
+    var counter = 0;
 
-while( counter < album1.selling_points.length ){
-    $selling_points.append( "<li>" + album1.selling_points[ counter ] + "</li>" );
+    while( counter < product.selling_points.length ){
+        $selling_points.append( "<li>" + product.selling_points[ counter ] + "</li>" );
 
-    counter++;
-}
+        counter++;
+    }
 
-$target.append( $name, $author, $image, $price, $selling_points );
-$form.before( $target );
+    $target.append( $name, $author, $image, $price, $selling_points );
+    $form.before( $target );
+};
+
+addToPage( book1 );
+addToPage( book2 );
+addToPage( album1 );
+addToPage( album2 );
